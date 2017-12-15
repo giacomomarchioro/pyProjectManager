@@ -1,5 +1,5 @@
 # pyProjectManager(NOT-READY IN DEVELOPMENT).
-pyProjectManager (pyPM) is a ProjectManager that manage itself and helps you to be more productive, tracking your activity. The benefit of tracking is that it helps you avoiding loosing files, stop repeating things over and over again and integrating your workflows for reporting and publishing quickly your results. 
+**pyProjectManager (pyPM)** is a ProjectManager that manage itself and helps you to be more productive tracking your activity. The benefit of tracking is that it helps you avoiding loosing files, stop repeating things over and over again, integrating your workflows for reporting and publishing quickly your results. 
 
 This simple project manger system is based on Python using a **fix-folder structure** and **auto-tagging system** that runs when you want and its dedicated file manager.
 
