@@ -5,11 +5,11 @@ This simple project manger system is based on Python using a **fix-folder struct
 
 ## Compared to similar things
 Compared to similar things like:
-  -**Zeitgeist Ubuntu** - An excellent utility for traking your activities, pyPM use minimal sys resources compared to it.
-  -**(Open Science Framework)[https://github.com/centerforopenscience]** - Web based for scientifc projects
-  -**MyCollab,(Freedcamp)[https://freedcamp.com/] etc. etc.** - Web based generic PM
-  -**(Planner)[https://wiki.gnome.org/action/show/Apps/Planner?action=show&redirect=Planner]** - Ubuntu app for displaying projects
-  -**Odoo** - Big Python CRM with PM featuers
+  - **Zeitgeist Ubuntu** - An excellent utility for traking your activities, pyPM use minimal sys resources compared to it.
+  - **[Open Science Framework](https://github.com/centerforopenscience)** - Web based for scientifc projects
+  - **MyCollab,[Freedcamp](https://freedcamp.com/) etc. etc.** - Web based generic PM
+  - **[Planner](https://wiki.gnome.org/action/show/Apps/Planner?action=show&redirect=Planner)** - Ubuntu app for displaying projects
+  - **Odoo** - Big Python CRM with PM featuers
 pyProjectManager allows you to track your activity and to use auto-tagging you don't have to update the project status pyPM will do it for you.
 
 
