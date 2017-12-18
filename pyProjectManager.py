@@ -96,6 +96,7 @@ class Project:
         self.status='Active'
         self.cost = None
         self.skills = None
+        self.resources = []
     
     def test(self):
         pass
@@ -109,9 +110,21 @@ class Task:
         self.start=None
         self.finsh=None
         self.status='Active'
+        self.predecessors = []
+        self.resources = []
+        self.priority = None 
     
     def test():
         pass
         
+class Resource: 
+    def __init__(self,name):
+        self.name = None 
+        self.type = None 
+        self.cost = None
+        self.location = None 
+        self.calendar = None 
+        
+    
 a = ProjectManager() 
         
