@@ -1,5 +1,5 @@
 # pyProjectManager(NOT-READY IN DEVELOPMENT).
-**pyProjectManager (pyPM)** is a ProjectManager that manage itself and helps you to be more productive tracking your activity. The benefit of tracking is that it helps you avoiding loosing files, stop repeating things over and over again, integrating your workflows for reporting and publishing quickly your results. 
+**pyProjectManager (pyPM)** is a ProjectManagment that manage itself and helps you to be more productive tracking your activity. The benefit of tracking is that it helps you avoiding loosing files, stop repeating things over and over again, integrating your workflows for reporting and publishing quickly your results. 
 
 This simple project manger system is based on Python using a **fix-folder structure** and **auto-tagging system** that runs when you want and its dedicated file manager.
 
@@ -7,15 +7,16 @@ This simple project manger system is based on Python using a **fix-folder struct
 Compared to similar things like:
   - **Zeitgeist Ubuntu** - An excellent utility for traking your activities, pyPM use minimal sys resources compared to it.
   - **[Open Science Framework](https://github.com/centerforopenscience)** - Web based for scientifc projects
-  - **MyCollab,[Freedcamp](https://freedcamp.com/) etc. etc.** - Web based generic PM
+  - **MyCollab,[Freedcamp](https://freedcamp.com/),[Taiga (in Python)](https://taiga.io/) etc. etc.** - Web based generic PM
   - **[Planner](https://wiki.gnome.org/action/show/Apps/Planner?action=show&redirect=Planner)** - Ubuntu app for displaying projects
   - **Odoo** - Big Python CRM with PM featuers
 pyProjectManager allows you to track your activity and to use auto-tagging you don't have to update the project status pyPM will do it for you.
+  - [**TaskJuggler**](http://taskjuggler.org/download.html) - Written in Ruby
 
 
 # How does it works?
 ## Plan the project using the main app
-Using the main app you can create new projects and subdivide them in sub-projects and tasks 
+Using the main app you can create new projects and subdivide them in tasks and subtask 
 ## Select the project using the system tray icon
 pyPM is mainly used as a system tray icon,clicking on the icon you can select between your active projects. Once selected the project pyPM will **log** that you are working on that project and will **auto-tag** the files you are producing or modifying from now on with the project name.
 ## The fixed folder structure 
@@ -59,6 +60,7 @@ Tipical Gantt view of the project.
 Why is not better to create a folder for a project and store everything in it?
 
 It depends on the size of the project but usually this have some drowbacks: the inofrmation inside can be difficult to reach again. For example imagine that you did a similar task "dissemination" where you created a nice video of your system you have to dig inside the folder structures of your project to find it. 
+
 
 Some operating systems already divides the files using their formats in video and images etc. etc. is not better to use this solution? 
 
