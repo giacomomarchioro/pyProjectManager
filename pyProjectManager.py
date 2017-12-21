@@ -14,8 +14,8 @@ class ProjectManager:
     def __init__(self):
         self.projects = {}
         self.workingon = None
-        self.watching_folders = ["C:\Users\OPdaTe\Pictures","C:\Users\OPdaTe\Videos"]
-        self.path = r'C:\Users\OPdaTe\Documents'
+        self.watching_folders = [r"/home/opdate/Pictures",r'/home/opdate/Documents/Litterature']
+        self.path = r'/home/opdate/'
         
     def inizialize(self):
         path = os.path.join(self.path,'pyProjectManagement')
@@ -66,30 +66,33 @@ class ProjectManager:
         cPickle.dump()
         
     def create_daily_update(self):
+        import os.path, time
         today = datetime.now()
         timestamp = time.time() #seems faster is a float 
-        import os.path, time
+        
         name  ='%s_%s_%s.txt' %(today.day, today.month, today.year)
         ranges = {}
         tmp_range = []
+        files  = {}
         with open(os.path.join(self.path,"pyProjectManagement",name),'r') as f:
-            print f.read()
+            time, tags = f.read().split('->')
+            ranges[time] = tags
             
-        for i in self.watching_folders:
-            listdir = os.listdir(i)
+        for wfolder in self.watching_folders:
+            listdir = os.listdir(wfolder)
             
-            for j in listdir:
-                path = os.path.join(i,j)
-                print "last modified: %s" % time.ctime(os.path.getmtime(path))
-                print "created: %s" % time.ctime(os.path.getctime(path))
-        
-
+            for wfile in listdir:
+                path = os.path.join(wfolder,wfile)
+                ct = time.ctime(os.path.getmtime(path))
+                mt = time.ctime(os.path.getctime(path))
+                if ct:
+                    print 'test'
 
 class Project:
     
     def __init__(self,name):
         self.name=name
-        self.subprojects=[]
+        self.working_packages_phases = []
         self.tasks = []
         self.start=None
         self.finsh=None
@@ -104,6 +107,7 @@ class Project:
 class Task:
     def __init__(self,name):
         self.name = name
+        self.project = None 
         self.status = None
         self.cost = None
         self.skills = None
@@ -111,6 +115,7 @@ class Task:
         self.finsh=None
         self.status='Active'
         self.predecessors = []
+        self.subtasks = []
         self.resources = []
         self.priority = None 
     
@@ -124,7 +129,11 @@ class Resource:
         self.cost = None
         self.location = None 
         self.calendar = None 
-        
+
+class Deliverable:
+    pass
+    
     
 a = ProjectManager() 
-        
+a.newproject('Scan4Reco')
+a.newproject('Endoscope')
