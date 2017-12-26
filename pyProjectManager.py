@@ -14,6 +14,7 @@ class ProjectManager:
     def __init__(self):
         self.projects = {}
         self.workingon = None
+
         self.watching_folders = [r"/home/opdate/Documents/watchfolder2/",
                                  "/home/opdate/Documents/watchfolder1/"]
         self.path = r'/home/opdate/'
@@ -23,7 +24,6 @@ class ProjectManager:
         if not os.path.exists(path):
             os.makedirs(path)
         self.__append_history('created Project Management')
-
 
 
     
@@ -42,6 +42,7 @@ class ProjectManager:
         with open(os.path.join(self.path,"pyProjectManagement",name),'a') as f:
             f.write(r'%s:%s:%s -> %s' %(today.hour,today.minute,today.second,info)+ '\n')
     
+
     def __append_history(self,info):
         '''
         This method is used to append to the history logfile: log.txt
@@ -126,6 +127,7 @@ class ProjectManager:
                     i+=1
                 print fname, tags[i] 
         return ranges
+=======
 
 class Project:
     
@@ -138,7 +140,9 @@ class Project:
         self.status='Active'
         self.cost = None
         self.skills = None
+
         self.resources = []
+
     
     def test(self):
         pass
@@ -146,21 +150,26 @@ class Project:
 class Task:
     def __init__(self,name):
         self.name = name
+
         self.project = None 
+
         self.status = None
         self.cost = None
         self.skills = None
         self.start=None
         self.finsh=None
         self.status='Active'
+
         self.predecessors = []
         self.subtasks = []
         self.resources = []
         self.priority = None 
+
     
     def test():
         pass
         
+
 class Resource: 
     def __init__(self,name):
         self.name = None 
@@ -176,3 +185,5 @@ class Deliverable:
 a = ProjectManager() 
 a.newproject('Scan4Reco')
 a.newproject('Endoscope')
+ 
+        
