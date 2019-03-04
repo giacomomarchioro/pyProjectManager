@@ -1,4 +1,7 @@
 # pyProjectManager(NOT-READY IN DEVELOPMENT).
+> __One Ring to rule them all, one Ring to find them,
+One Ring to bring them all and in the database bind them__
+
 **pyProjectManager (pyPM)** is a ProjectManagment that manage itself and helps you to be more productive tracking your activity. The benefit of tracking is that it helps you avoiding loosing files, stop repeating things over and over again, integrating your workflows for reporting and publishing quickly your results. 
 
 This simple project manger system is based on Python using a **fix-folder structure** and **auto-tagging system** that runs when you want and its dedicated file manager.
