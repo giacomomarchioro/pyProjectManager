@@ -28,6 +28,7 @@ pyProjectManager is based on a **fixed folder structure**, **wathced folders** a
   - Image (.jpg, .tiff, etc...)
   - Explanatory drawing  (.jpg, .tiff, etc...) 
   - Video  (.avi, .mp4, etc...)
+  - Video tutorial (.avi, .mp4, etc...)
   - Script  (.py, .cpp, etc...)
   - CAD model  (.dae, .step, etc...)
   - Invoice  (.pdf, etc...)
