@@ -18,7 +18,7 @@ pyProjectManager allows you to track your activity and to use auto-tagging you d
 ## Plan the project using the main app
 Using the main app you can create new projects and subdivide them in tasks and subtask 
 ## Select the project using the system tray icon
-pyPM is mainly used as a system tray icon,clicking on the icon you can select between your active projects. Once selected the project pyPM will **log** that you are working on that project and will **auto-tag** the files you are producing or modifying from now on with the project name.
+pyPM is mainly used as a system tray icon,clicking on the icon you can select between your active projects. Once selected the project pyPM will **log** that you are working on that project and specific task and will **auto-tag** the files you are producing or modifying from now on with the project name.
 ## The fixed folder structure 
 pyProjectManager is based on a **fixed folder structure**, **wathced folders** and **tags**. This could be a change in the way you are used to work but it really makes the difference. An example of fixed folder structure is the following:
 
@@ -33,12 +33,13 @@ pyProjectManager is based on a **fixed folder structure**, **wathced folders** a
   - Result (.jpg, .tiff, .txt etc..)
   - Presentation (.opd, .ppt, etc.)
   - Report ( .doc, .odf, etc.)
-  - Instrument acquisitions (.strangeformat) 
+  - Instrument acquisitions (.strangeformat)
+  - Projects (?)
   
-The idea is when saving something to group the files sorted by **type** trying to avoid any nested folder that can be source of problems. These folders can be then add to the **watched folders list** of **PyPM** which check them regularly (e.g. when computer switch off or goes in stand-by). **PyPM** use the **log** file to assign to every file you produced the tag of the project and the task you where working on when you created it. So if you where working on the project _"Panama Canal Expansion"_ in the task _"dissemination"_ and during that time you create _escavation.avi_ file in the _Videos_ folder, the _"escavation.avi"_ file will have the following tags: .avi, Videos, Panama Canal Expansion, dissemination, yourname, path. Location name of the file and tags are stored in a database that you can access to retrive the information.
+The idea is when saving something to group the files sorted by **type** trying to avoid any nested folder that can be source of problems. These folders can be then add to the **watched folders list** of **PyPM** which check them regularly (e.g. when computer switch off or goes in stand-by). **PyPM** use the **log** file to assign to every file you produced the tag of the project and the task you where working on when you created it. So if you were working on the project _"Panama Canal Expansion"_ in the task _"dissemination"_ and during that time you create _escavation.avi_ file in the _Videos_ folder, the _"escavation.avi"_ file will have the following tags: .avi, Videos, Panama Canal Expansion, dissemination, yourname, path. Location name of the file and tags are stored in a database that you can access to retrive the information.
 
 ## Tag everything 
-This kind of auto-tagging system allows you to tag everything that has a timestamp. You can tag browsing history (website that you visted for gethering information) emails, chats and so on.
+This kind of auto-tagging system allows you to tag everything that has a timestamp. You can tag browsing history (website that you visted for gethering information) emails, chats .bash_history and so on. You can transoform your screenshoot folder in a watched-folder so you can documented how you solved a task without any effort.
 
 ## Creating a deliverable 
 The deliverable is something that is expected when the task is finished. You can create directly task with an **auto-updating of the status** task create [Video]. You can add further filters to it for example format specification, resolution, frame-rate specification to be respected.  
@@ -59,7 +60,7 @@ Tipical Gantt view of the project.
 # Q&A:
 Why is not better to create a folder for a project and store everything in it?
 
-It depends on the size of the project but usually this have some drowbacks: the inofrmation inside can be difficult to reach again. For example imagine that you did a similar task "dissemination" where you created a nice video of your system you have to dig inside the folder structures of your project to find it. 
+It depends on the size of the project but usually this have some drowbacks: the inofrmation inside can be difficult to reach again. For example imagine that you did a similar task "dissemination" where you created a nice video of your system you have to dig inside the folder structures of your project to find it. You can mix the two approaches: keep a folder for the project where you store files you are sure are not usable in others, and keep files re-usable in the fixed store structure.
 
 
 Some operating systems already divides the files using their formats in video and images etc. etc. is not better to use this solution? 
