@@ -51,6 +51,12 @@ The deliverable is something that is expected when the task is finished. You can
 ## Tagging in the file name
 Some additional tags can be added in the file name the most important is `_v#` where # is a number which denotes the number of a final version. You may start creating the file "escavation.avi" with a video editor but is not ready yet this mean that the task is not compleated. When you rename it escavation_v1.avi the system will see as a final version and hence the task is marked as completed.
 
+## Setting default save location for a software
+You can change the default save location for a software depending on the project you are working at the moment. (This works for compatible software).
+
+## Create automatically a timesheet
+Often it is required to create a timesheet with the hours worked for a specific project. 
+
 # Views
 Views allow you to see you project in a graphical way, different views are available. 
 
